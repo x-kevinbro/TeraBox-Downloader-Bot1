@@ -12,22 +12,22 @@ class TEXT:
     START = """
 <b>I’m a powerful Terabox downloader!</b>
 
-📥 Send me a Terabox link to download.
+📥 ꜱᴇɴᴅ ᴍᴇ ᴛᴇʀᴀʙᴏx ʟɪɴᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.
 ⚠️ Only videos under 2GB are supported.
 📢 Don’t forget to join our update channel.
 
 """
-    DEVELOPER = "👨‍💻 Developer"
-    UPDATES_CHANNEL = "📢 Updates Channel"
-    SOURCE_CODE = "💬 Support Group"
+    DEVELOPER = "👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+    UPDATES_CHANNEL = "📢 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ"
+    SOURCE_CODE = "💬 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ"
 
 class INLINE:
     START_BTN = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(TEXT.DEVELOPER, url="https://t.me/MrMNTG")],
+            [InlineKeyboardButton(TEXT.DEVELOPER, url="https://t.me/pArAd0X6")],
             [
-                InlineKeyboardButton(TEXT.UPDATES_CHANNEL, url="https://t.me/MNBots"),
-                InlineKeyboardButton(TEXT.SOURCE_CODE, url="https://t.me/MNBots_support"),
+                InlineKeyboardButton(TEXT.UPDATES_CHANNEL, url="https://t.me/world_0f_parad0x"),
+                InlineKeyboardButton(TEXT.SOURCE_CODE, url="https://t.me/world_0f_parad0x"),
             ],
         ]
     )
@@ -43,9 +43,9 @@ async def start(client: MN_Bot, message: Message):
     if len(args) > 1 and args[1].startswith("verify_"):
         token = args[1].split("_", 1)[1]
         if await validate_token_and_verify(user_id, token):
-            await message.reply_text("✅ You are now verified! You can use the bot for 12 hours.")
+            await message.reply_text("✅ ʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠᴇʀɪғɪᴇᴅ. ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ 𝟷𝟸 ʜᴏᴜʀꜱ.")
         else:
-            await message.reply_text("❌ Invalid or expired verification link.")
+            await message.reply_text("❌ ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ʟɪɴᴋ.")
         return
 
     user = message.from_user
