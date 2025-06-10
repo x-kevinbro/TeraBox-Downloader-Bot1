@@ -11,14 +11,14 @@ class API:
     ID = int(os.environ.get("API_ID", 0))
 
 class OWNER:
-    ID = int(os.environ.get("OWNER", 0))
+    ID = int(os.environ.get("OWNER", 1773034985))
 
 class CHANNEL:
-    ID = int(os.environ.get("CHANNEL_ID", 0))
+    ID = int(os.environ.get("CHANNEL_ID", -1002482592412))
 
 class WEB:
     PORT = int(os.environ.get("PORT", 8000))
 
 class DATABASE:
     URI = os.environ.get("DB_URI", "")
-    NAME = os.environ.get("DB_NAME", "MN_Bot_DB")
+    NAME = os.environ.get("DB_NAME", "Cluster0")
