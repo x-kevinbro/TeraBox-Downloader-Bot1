@@ -14,10 +14,10 @@ class OWNER:
     ID = int(os.environ.get("OWNER", 1773034985))
 
 class CHANNEL:
-    ID = int(os.environ.get("CHANNEL_ID", -1002482592412))
+    ID = int(os.environ.get("CHANNEL_ID", -1002732527335))
 
 class WEB:
-    PORT = int(os.environ.get("PORT", 8000))
+    PORT = int(os.environ.get("PORT", 8080))
 
 class DATABASE:
     URI = os.environ.get("DB_URI", "")
