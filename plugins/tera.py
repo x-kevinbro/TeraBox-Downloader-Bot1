@@ -132,12 +132,12 @@ async def handle_terabox(client, message: Message):
         verify_url = await build_verification_link(client.me.username, user_id)
         buttons = [
             [
-                InlineKeyboardButton("✅ Verify Now", url=verify_url),
-                InlineKeyboardButton("📖 Tutorial", url=HOW_TO_VERIFY)
+                InlineKeyboardButton("✅ ᴠᴇʀɪғʏ ɴᴏᴡ", url=verify_url),
+                InlineKeyboardButton("📖 ᴛᴜᴛᴏʀɪᴀʟ", url=HOW_TO_VERIFY)
             ]
         ]
         await message.reply_text(
-            "🔐 You must verify before using this command.\n\n⏳ Verification lasts for 12 hours.",
+            "🔐 ʏᴏᴜ ᴍᴜꜱᴛ ᴠᴇʀɪғʏ ʙᴇғᴏʀᴇ ᴜꜱɪɴɢ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.\n\n⏳ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ʟᴀꜱᴛꜱ ғᴏʀ 𝟷𝟸 ʜᴏᴜʀꜱ.",
             reply_markup=InlineKeyboardMarkup(buttons)
         )
         return
@@ -150,7 +150,7 @@ async def handle_terabox(client, message: Message):
 
     temp_path = os.path.join(tempfile.gettempdir(), info["name"])
 
-    await message.reply("📥 Downloading...")
+    await message.reply("📥 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘪𝘯𝘨...")
 
     try:
         with requests.get(info["download_link"], headers=DL_HEADERS, stream=True) as r:
@@ -180,7 +180,7 @@ async def handle_terabox(client, message: Message):
             protect_content=True
         )
 
-        await message.reply("✅ File will be deleted from your chat after 12 hours.")
+        await message.reply("✅ ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀғᴛᴇʀ 𝟷𝟸 ʜᴏᴜʀꜱ.")
         await asyncio.sleep(43200)
         try:
             await sent_msg.delete()
