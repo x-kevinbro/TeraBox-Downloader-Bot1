@@ -10,11 +10,11 @@ from datetime import datetime
 #  @MrMNTG @MusammilN
 class TEXT:
     START = """
-<b>I’m a powerful Terabox downloader!</b>
+<b>ɪ'ᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʀᴀʙᴏx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ!</b>
 
 📥 ꜱᴇɴᴅ ᴍᴇ ᴛᴇʀᴀʙᴏx ʟɪɴᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.
-⚠️ Only videos under 2GB are supported.
-📢 Don’t forget to join our update channel.
+⚠️ ᴏɴʟʏ ᴠɪᴅᴇᴏꜱ ᴜɴᴅᴇʀ 𝟸ɢʙ ᴀʀᴇ ꜱᴜᴘᴘᴏʀᴛᴇᴅ.
+📢 ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ Jᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ.
 
 """
     DEVELOPER = "👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ"
