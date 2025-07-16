@@ -8,7 +8,7 @@ class BOT:
 
 class API:
     HASH = os.environ.get("API_HASH", "771c072b4ae280c10508d636b494b285")
-    ID = int(os.environ.get("API_ID", 0))
+    ID = int(os.environ.get("API_ID", 25013204))
 
 class OWNER:
     ID = int(os.environ.get("OWNER", 8046796637))
